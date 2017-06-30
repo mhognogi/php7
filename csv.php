@@ -1,3 +1,9 @@
+//parse csv
+foreach (explode(PHP_EOL, $content) as $row) {
+    $row = str_getcsv($row);
+    var_dump($row);
+}
+
 //split csv
 $inputFile = '../productDetalii.csv';
 $outputFile = 'output';
@@ -19,8 +25,4 @@ while (!feof($in)) {
 }
 fclose($out);
 
-or
-foreach (explode(PHP_EOL, $content) as $row) {
-    $row = str_getcsv($row);
-    var_dump($row);
-}
+
