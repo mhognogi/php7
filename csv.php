@@ -18,3 +18,9 @@ while (!feof($in)) {
     $rowCount++;
 }
 fclose($out);
+
+or
+foreach (explode(PHP_EOL, $content) as $row) {
+    $row = str_getcsv($row);
+    var_dump($row);
+}
