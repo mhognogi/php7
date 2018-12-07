@@ -1,3 +1,5 @@
+<?php
+
 $dirmailer = '/../../../../assets/PHPMailer';
 
 if (!class_exists('phpmailer'))
